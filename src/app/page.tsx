@@ -5,7 +5,7 @@ import Header from '@/components/Header'
 import QuickActions from '@/components/QuickActions'
 import Footer from '@/components/Footer'
 import WaitlistConfirmation from '@/components/WaitlistConfirmation'
-
+import Image from 'next/image'
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home')
   const [showWaitlistConfirmation, setShowWaitlistConfirmation] = useState(false)
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="relative">
             <div className="bg-gradient-to-br from-amber-100 via-orange-50 to-gray-100 rounded-3xl overflow-hidden shadow-2xl">
                        
-                <img src="/image.png" alt="" />
+                <Image src="/image.png" alt="" width={600} height={450}/>
                
               
             </div>

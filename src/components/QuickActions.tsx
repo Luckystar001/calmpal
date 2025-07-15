@@ -1,3 +1,4 @@
+import Image from "next/image"
 interface QuickActionsProps {
   onSectionChange: (section: string) => void
 }
@@ -8,19 +9,25 @@ export default function QuickActions({ onSectionChange }: QuickActionsProps) {
       id: 'screenshot1',
       title: 'SOS Mode',
       description: 'Tantrum happening now',
-      image: '/18f141944323aeecbc85ca1ff21fe891.jpg'
+      image: '/18f141944323aeecbc85ca1ff21fe891.jpg',
+      width: 200,
+      height: 60,
     },
     {
       id: 'screenshot2',
       title: 'Parent Calm',
       description: 'Quick breathing',
-      image: '/61418ce04dac60de73b9dc87a47ac2a9.jpg'
+      image: '/61418ce04dac60de73b9dc87a47ac2a9.jpg',
+     width: 200,
+      height: 60,
     },
     {
       id: 'screenshot3',
       title: 'Prevention Tips',
       description: 'Avoid meltdowns',
-      image: '/abcf723f9882bc2eae5a21abc1e5e46c.jpg'
+      image: '/abcf723f9882bc2eae5a21abc1e5e46c.jpg',
+     width: 200,
+      height: 60,
     }
   ]
 
@@ -41,11 +48,13 @@ export default function QuickActions({ onSectionChange }: QuickActionsProps) {
             {/* App Screenshot */}
             <div className="relative bg-gray-50 p-8 flex items-center justify-center">
               <div className="relative w-full max-w-xs">
-                <img
+                <Image
                   src={screenshot.image}
                   alt={`${screenshot.title} - ${screenshot.description}`}
                   className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-105"
-                />
+                  width={screenshot.width}
+                  height={screenshot.height}
+               />
 
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-2xl flex items-center justify-center">
