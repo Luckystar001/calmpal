@@ -10,9 +10,9 @@ export default function Footer() {
             <Image
               src="/logo.jpg"
               alt="CalmPal Logo"
-              width={100}
-              height={32}
-              className="h-8 w-auto"
+              width={130}
+              height={42}
+              className="h-10 w-auto"
             />
             <p className="text-sm text-gray-500">Your everyday calm companion</p>
           </div>

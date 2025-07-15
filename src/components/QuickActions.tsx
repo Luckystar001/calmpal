@@ -10,24 +10,24 @@ export default function QuickActions({ onSectionChange }: QuickActionsProps) {
       title: 'SOS Mode',
       description: 'Tantrum happening now',
       image: '/18f141944323aeecbc85ca1ff21fe891.jpg',
-      width: 200,
-      height: 60,
+      width: 400,
+      height: 800,
     },
     {
       id: 'screenshot2',
       title: 'Parent Calm',
       description: 'Quick breathing',
       image: '/61418ce04dac60de73b9dc87a47ac2a9.jpg',
-     width: 200,
-      height: 60,
+      width: 400,
+      height: 800,
     },
     {
       id: 'screenshot3',
       title: 'Prevention Tips',
       description: 'Avoid meltdowns',
       image: '/abcf723f9882bc2eae5a21abc1e5e46c.jpg',
-     width: 200,
-      height: 60,
+      width: 400,
+      height: 800,
     }
   ]
 
@@ -39,21 +39,22 @@ export default function QuickActions({ onSectionChange }: QuickActionsProps) {
       <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed font-medium text-center">
         Simple, intuitive design that works when you need it most
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
         {screenshots.map((screenshot, index) => (
           <div
             key={screenshot.id}
             className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden cursor-pointer transform hover:scale-105"
           >
             {/* App Screenshot */}
-            <div className="relative bg-gray-50 p-8 flex items-center justify-center">
-              <div className="relative w-full max-w-xs">
+            <div className="relative bg-gray-50 p-4 md:p-6 lg:p-8 flex items-center justify-center">
+              <div className="relative w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px]">
                 <Image
                   src={screenshot.image}
                   alt={`${screenshot.title} - ${screenshot.description}`}
                   className="w-full h-auto rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-105"
                   width={screenshot.width}
                   height={screenshot.height}
+                  sizes="(max-width: 768px) 200px, (max-width: 1024px) 240px, 280px"
                />
 
                 {/* Hover overlay */}
@@ -71,7 +72,7 @@ export default function QuickActions({ onSectionChange }: QuickActionsProps) {
               </div>
             </div>
 
-            
+
           </div>
         ))}
       </div>

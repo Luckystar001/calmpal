@@ -60,9 +60,7 @@ export default function Home() {
               >
                 Join the Waitlist
               </button>
-              <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-50 transition-all duration-200">
-                Learn More
-              </button>
+             
             </div>
 
             <div className="flex items-center space-x-2 pt-2">
