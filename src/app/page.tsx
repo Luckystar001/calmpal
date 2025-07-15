@@ -1,11 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Header from '@/components/Header'
 import QuickActions from '@/components/QuickActions'
 import Footer from '@/components/Footer'
 import WaitlistConfirmation from '@/components/WaitlistConfirmation'
-import Image from 'next/image'
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home')
   const [showWaitlistConfirmation, setShowWaitlistConfirmation] = useState(false)
@@ -87,7 +87,7 @@ export default function Home() {
             Tired of tantrums taking over your day?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            You're not alone. Every parent faces those overwhelming moments when nothing
+            You&apos;re not alone. Every parent faces those overwhelming moments when nothing
             seems to work. CalmPal transforms chaos into calm with expert-backed tools, real-time
             guidance, and a supportive community that truly understands your journey.
           </p>
@@ -114,7 +114,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-blue-700 transition-all duration-300">SOS Calming Assistant</h3>
               <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-all duration-300">
                 Instant, step-by-step guidance when tantrums strike.
-                Get personalized strategies based on your child's age and triggers.
+                Get personalized strategies based on your child&apos;s age and triggers.
               </p>
             </div>
 
@@ -142,7 +142,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-orange-700 transition-all duration-300">Avatar Coach</h3>
               <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-all duration-300">
                 Help kids name and manage big emotions with
-                friendly, interactive characters they'll love.
+                friendly, interactive characters they&apos;ll love.
               </p>
             </div>
 
@@ -181,7 +181,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-blue-700 transition-all duration-300">"Ask the Nest" Community</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-blue-700 transition-all duration-300">&ldquo;Ask the Nest&rdquo; Community</h3>
               <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-all duration-300">
                 Connect with parents who get it. Share experiences
                 and get support 24/7.
@@ -198,7 +198,7 @@ export default function Home() {
         {/* Testimonials Section */}
         <section className="mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 bg-clip-text text-transparent mb-12 text-center leading-tight">
-            You're not alone in this journey
+            You&apos;re not alone in this journey
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -212,7 +212,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Finally, an app that actually helps in the moment! The SOS feature talked me through our worst grocery store meltdown."
+                &ldquo;Finally, an app that actually helps in the moment! The SOS feature talked me through our worst grocery store meltdown.&rdquo;
               </p>
             </div>
 
@@ -227,7 +227,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "The community feature is a lifesaver. Knowing other parents go through this too makes such a difference."
+                &ldquo;The community feature is a lifesaver. Knowing other parents go through this too makes such a difference.&rdquo;
               </p>
             </div>
 
@@ -242,7 +242,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "I love how the tracking helped me see patterns. Now I can prevent most tantrums before they start!"
+                &ldquo;I love how the tracking helped me see patterns. Now I can prevent most tantrums before they start!&rdquo;
               </p>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed font-medium">
               Join the CalmPal waitlist and be among the first to access our early release.
               <br />
-              <span className="text-gray-700 font-semibold">Parenting doesn't have to feel overwhelming.</span>
+              <span className="text-gray-700 font-semibold">Parenting doesn&apos;t have to feel overwhelming.</span>
             </p>
           </div>
 
